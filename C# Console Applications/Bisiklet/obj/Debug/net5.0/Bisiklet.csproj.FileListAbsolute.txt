@@ -1,0 +1,16 @@
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\bin\Debug\net5.0\Bisiklet.exe
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\bin\Debug\net5.0\Bisiklet.deps.json
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\bin\Debug\net5.0\Bisiklet.runtimeconfig.json
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\bin\Debug\net5.0\Bisiklet.runtimeconfig.dev.json
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\bin\Debug\net5.0\Bisiklet.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\bin\Debug\net5.0\ref\Bisiklet.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\bin\Debug\net5.0\Bisiklet.pdb
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\obj\Debug\net5.0\Bisiklet.csproj.AssemblyReference.cache
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\obj\Debug\net5.0\Bisiklet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\obj\Debug\net5.0\Bisiklet.AssemblyInfoInputs.cache
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\obj\Debug\net5.0\Bisiklet.AssemblyInfo.cs
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\obj\Debug\net5.0\Bisiklet.csproj.CoreCompileInputs.cache
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\obj\Debug\net5.0\Bisiklet.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\obj\Debug\net5.0\ref\Bisiklet.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\obj\Debug\net5.0\Bisiklet.pdb
+C:\Users\ahmet\source\repos\Ders Notlarim\Bisiklet\obj\Debug\net5.0\Bisiklet.genruntimeconfig.cache
