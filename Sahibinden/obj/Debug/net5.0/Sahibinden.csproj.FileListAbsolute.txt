@@ -1,0 +1,16 @@
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\bin\Debug\net5.0\Sahibinden.exe
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\bin\Debug\net5.0\Sahibinden.deps.json
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\bin\Debug\net5.0\Sahibinden.runtimeconfig.json
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\bin\Debug\net5.0\Sahibinden.runtimeconfig.dev.json
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\bin\Debug\net5.0\Sahibinden.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\bin\Debug\net5.0\ref\Sahibinden.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\bin\Debug\net5.0\Sahibinden.pdb
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\obj\Debug\net5.0\Sahibinden.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\obj\Debug\net5.0\Sahibinden.AssemblyInfoInputs.cache
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\obj\Debug\net5.0\Sahibinden.AssemblyInfo.cs
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\obj\Debug\net5.0\Sahibinden.csproj.CoreCompileInputs.cache
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\obj\Debug\net5.0\Sahibinden.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\obj\Debug\net5.0\ref\Sahibinden.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\obj\Debug\net5.0\Sahibinden.pdb
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\obj\Debug\net5.0\Sahibinden.genruntimeconfig.cache
+C:\Users\ahmet\source\repos\Ders Notlarim\Sahibinden\obj\Debug\net5.0\Sahibinden.csproj.AssemblyReference.cache

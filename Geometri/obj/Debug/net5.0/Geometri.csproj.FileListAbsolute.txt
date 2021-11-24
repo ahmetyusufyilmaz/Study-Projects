@@ -1,0 +1,16 @@
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\bin\Debug\net5.0\Geometri.exe
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\bin\Debug\net5.0\Geometri.deps.json
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\bin\Debug\net5.0\Geometri.runtimeconfig.json
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\bin\Debug\net5.0\Geometri.runtimeconfig.dev.json
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\bin\Debug\net5.0\Geometri.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\bin\Debug\net5.0\ref\Geometri.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\bin\Debug\net5.0\Geometri.pdb
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\obj\Debug\net5.0\Geometri.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\obj\Debug\net5.0\Geometri.AssemblyInfoInputs.cache
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\obj\Debug\net5.0\Geometri.AssemblyInfo.cs
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\obj\Debug\net5.0\Geometri.csproj.CoreCompileInputs.cache
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\obj\Debug\net5.0\Geometri.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\obj\Debug\net5.0\ref\Geometri.dll
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\obj\Debug\net5.0\Geometri.pdb
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\obj\Debug\net5.0\Geometri.genruntimeconfig.cache
+C:\Users\ahmet\source\repos\Ders Notlarim\Geometri\obj\Debug\net5.0\Geometri.csproj.AssemblyReference.cache
