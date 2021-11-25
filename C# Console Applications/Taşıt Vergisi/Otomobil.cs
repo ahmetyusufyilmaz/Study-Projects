@@ -52,21 +52,25 @@ namespace Tasit_Vergisi
                 {
                     Console.WriteLine($"Yıllık Vergi: {(this.Fiyat * 0.02) + (this.Fiyat * 0.05)} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.05) + (this.Fiyat * 0.02)) / 2) + (this.Fiyat * 0.05)+(this.Fiyat)  } TL");
+                    this.Fiyat = (((this.Fiyat * 0.05) + (this.Fiyat * 0.02)) / 2) + (this.Fiyat * 0.05) + (this.Fiyat);
                 }
                 else if (this.MotorHacmi >= 1000 && this.MotorHacmi <= 1599) // 0-4 Yaş arası ve 1000-1599 CC
                 {
                     Console.WriteLine($"Yıllık Vergi: {((this.Fiyat * 0.05) + (this.Fiyat * 0.05)) / 2} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: { (((this.Fiyat * 0.05) + (this.Fiyat * 0.05)) / 2) + (this.Fiyat * 0.10)+(this.Fiyat) } TL");
+                    this.Fiyat = (((this.Fiyat * 0.05) + (this.Fiyat * 0.05)) / 2) + (this.Fiyat * 0.10) + (this.Fiyat);
                 }
                 else if (this.MotorHacmi >= 1600 && this.MotorHacmi <= 1999)// 0-4 Yaş arası ve 1600-1999 CC
                 {
                     Console.WriteLine($"Yıllık Vergi: {((this.Fiyat * 0.08) + (this.Fiyat * 0.05))/2} TL");
-                    Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.08) + (this.Fiyat * 0.05)) / 2) + (this.Fiyat * 0.15)+(this.Fiyat)} TL");
+                    Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.08) + (this.Fiyat * 0.05)) / 2) + (this.Fiyat * 0.15)+(this.Fiyat)} TL");  
+                    this.Fiyat = (((this.Fiyat * 0.08) + (this.Fiyat * 0.05)) / 2) + (this.Fiyat * 0.15) + (this.Fiyat);
                 }
                 else if (this.MotorHacmi >= 2000)// 0-4 Yaş arası ve +2000 CC
                 {
                     Console.WriteLine($"Yıllık Vergi: {(this.Fiyat * 0.1) + (this.Fiyat * 0.05)} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.05) + (this.Fiyat * 0.1))) / 2 + (this.Fiyat * 0.2)+(this.Fiyat) } TL");
+                    this.Fiyat = (((this.Fiyat * 0.05) + (this.Fiyat * 0.1))) / 2 + (this.Fiyat * 0.2) + (this.Fiyat);
                 }
             }
 
@@ -76,22 +80,25 @@ namespace Tasit_Vergisi
                 {
                     Console.WriteLine($"Yıllık Vergi: {(this.Fiyat * 0.02) + (this.Fiyat * 0.04)} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.02) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.05)} TL");
-
+                    this.Fiyat = (((this.Fiyat * 0.02) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.05);
                 }
                 else if (this.MotorHacmi >= 1000 && this.MotorHacmi <= 1599) // 5-9 yaş arası ve 1000-1599 CC
                 {
                     Console.WriteLine($"Yıllık Vergi: {(this.Fiyat * 0.05) + (this.Fiyat * 0.04)} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: { (((this.Fiyat * 0.05) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.1)} TL");
+                    this.Fiyat = (((this.Fiyat * 0.05) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.1);
                 }
                 else if (this.MotorHacmi >= 1600 && this.MotorHacmi <= 1999)// 5-9 yaş arası ve 1600-1999 CC
                 {
                     Console.WriteLine($"Yıllık Vergi: {(this.Fiyat * 0.08) + (this.Fiyat * 0.04)} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.08) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.15)} TL");
+                    this.Fiyat = (((this.Fiyat * 0.08) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.15);
                 }
                 else if (this.MotorHacmi >= 2000) // 5-9 yaş arası ve +2000 CC
                 {
                     Console.WriteLine($"Yıllık Vergi: {(this.Fiyat * 0.1) + (this.Fiyat * 0.04)} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.1) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.2)} TL");
+                    this.Fiyat = (((this.Fiyat * 0.1) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.2);
                 }
             }
 
@@ -101,22 +108,26 @@ namespace Tasit_Vergisi
                 {
                     Console.WriteLine($"Yıllık Vergi: {(this.Fiyat * 0.02) + (this.Fiyat * 0.03)} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.02) + (this.Fiyat * 0.03))) / 2 + (this.Fiyat) + (this.Fiyat * 0.05)} TL");
+                    this.Fiyat = (((this.Fiyat * 0.02) + (this.Fiyat * 0.03))) / 2 + (this.Fiyat) + (this.Fiyat * 0.05);
                 }
                 else if (this.MotorHacmi >= 1000 && this.MotorHacmi <= 1599) // 10+ yaş ve 1000-1599 CC
                 {
                     Console.WriteLine($"Yıllık Vergi: {(this.Fiyat * 0.05) + (this.Fiyat * 0.03)} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.05) + (this.Fiyat * 0.03))) / 2 + (this.Fiyat) + (this.Fiyat * 0.1)} TL");
+                    this.Fiyat = (((this.Fiyat * 0.05) + (this.Fiyat * 0.03))) / 2 + (this.Fiyat) + (this.Fiyat * 0.1);
                 }
                 else if (this.MotorHacmi >= 1600 && this.MotorHacmi <= 1999)// 10+ yaş ve 1600-1999 CC
                 {
                     Console.WriteLine($"Yıllık Vergi: {(this.Fiyat * 0.08) + (this.Fiyat * 0.03)} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.08) + (this.Fiyat * 0.03))) / 2 + (this.Fiyat) + (this.Fiyat * 0.15)} TL");
-                }
+                    this.Fiyat = (((this.Fiyat * 0.08) + (this.Fiyat * 0.03))) / 2 + (this.Fiyat) + (this.Fiyat * 0.15);
+            }
+
                 else if (this.MotorHacmi >= 2000) // 5-9 yaş arası ve +2000 CC
                 {
                     Console.WriteLine($"Yıllık Vergi: {((this.Fiyat * 0.1) + (this.Fiyat * 0.03)) / 2} TL");
                     Console.WriteLine($"ÖTV + Yıllık vergi dahil ücret: {(((this.Fiyat * 0.1) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.2)} TL");
-
+                    this.Fiyat = (((this.Fiyat * 0.1) + (this.Fiyat * 0.04))) / 2 + (this.Fiyat) + (this.Fiyat * 0.2);
                 }
             }
         }

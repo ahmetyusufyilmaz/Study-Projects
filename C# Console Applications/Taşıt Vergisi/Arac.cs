@@ -27,7 +27,12 @@ namespace Tasit_Vergisi
            
         }
 
-       
+        public void IndirimYap(double indirimOrani)
+        {
+            this.Fiyat = this.Fiyat - (this.Fiyat * indirimOrani / 100);
+            Console.WriteLine($"\nYüzde {indirimOrani} indirim yapıldı.\nGüncel fiyat: {this.Fiyat} TL\n");
+        }
+        public void GetFiyat() { }
 
         abstract public void OTVHesapla();
         abstract public void YillikVergiHesapla();

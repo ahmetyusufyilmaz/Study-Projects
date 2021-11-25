@@ -20,6 +20,7 @@ namespace Tasit_Vergisi
                 $"Renk: {renault.Renk}\n");
             OTVHesapla(renault);
             YillikVergiHesapla(renault);
+            renault.IndirimYap(10);
             
             Console.WriteLine();
             Console.WriteLine("**************************************");
@@ -35,6 +36,7 @@ namespace Tasit_Vergisi
             Console.WriteLine($"{fiat.ID}\n{fiat.UretimYili} Model\n{fiat.VitesSayisi} vites\nMotor Hacmi: {fiat.MotorHacmi} CC\nTaşıma Kapasitesi: {fiat.TasimaKapasitesi}\n");
             OTVHesapla(fiat);
             YillikVergiHesapla(fiat);
+            fiat.IndirimYap(5);
 
             
 
