@@ -1,0 +1,16 @@
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\bin\Debug\net5.0\ToplamaOyunu.exe
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\bin\Debug\net5.0\ToplamaOyunu.deps.json
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\bin\Debug\net5.0\ToplamaOyunu.runtimeconfig.json
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\bin\Debug\net5.0\ToplamaOyunu.runtimeconfig.dev.json
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\bin\Debug\net5.0\ToplamaOyunu.dll
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\bin\Debug\net5.0\ref\ToplamaOyunu.dll
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\bin\Debug\net5.0\ToplamaOyunu.pdb
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\obj\Debug\net5.0\ToplamaOyunu.csproj.AssemblyReference.cache
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\obj\Debug\net5.0\ToplamaOyunu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\obj\Debug\net5.0\ToplamaOyunu.AssemblyInfoInputs.cache
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\obj\Debug\net5.0\ToplamaOyunu.AssemblyInfo.cs
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\obj\Debug\net5.0\ToplamaOyunu.csproj.CoreCompileInputs.cache
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\obj\Debug\net5.0\ToplamaOyunu.dll
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\obj\Debug\net5.0\ref\ToplamaOyunu.dll
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\obj\Debug\net5.0\ToplamaOyunu.pdb
+C:\Users\ahmet\source\repos\HomePractices\ToplamaOyunu\obj\Debug\net5.0\ToplamaOyunu.genruntimeconfig.cache
