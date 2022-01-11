@@ -40,7 +40,12 @@ namespace DataAccess.Concrete.EntityFramework
 
         public List<Customer> GetAll(Expression<Func<Customer, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            using (RentACarContext context = new RentACarContext())
+            {
+                return filter == null
+                    ? context.Set<Customer>().ToList()
+                    : context.Set<Customer>().Where(filter).ToList();
+            }
         }
 
         public void Update(Customer entity)

@@ -14,3 +14,4 @@ C:\Users\ahmet\source\repos\RentACar\Business\obj\Debug\net5.0\Business.csproj.C
 C:\Users\ahmet\source\repos\RentACar\Business\obj\Debug\net5.0\Business.dll
 C:\Users\ahmet\source\repos\RentACar\Business\obj\Debug\net5.0\ref\Business.dll
 C:\Users\ahmet\source\repos\RentACar\Business\obj\Debug\net5.0\Business.pdb
+C:\Users\ahmet\source\repos\RentACar\Business\obj\Debug\net5.0\Business.csproj.CopyComplete

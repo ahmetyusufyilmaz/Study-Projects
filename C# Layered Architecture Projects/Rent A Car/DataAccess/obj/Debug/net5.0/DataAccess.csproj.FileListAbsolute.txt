@@ -12,4 +12,3 @@ C:\Users\ahmet\source\repos\RentACar\DataAccess\obj\Debug\net5.0\DataAccess.cspr
 C:\Users\ahmet\source\repos\RentACar\DataAccess\obj\Debug\net5.0\DataAccess.dll
 C:\Users\ahmet\source\repos\RentACar\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
 C:\Users\ahmet\source\repos\RentACar\DataAccess\obj\Debug\net5.0\DataAccess.pdb
-C:\Users\ahmet\source\repos\RentACar\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CopyComplete
