@@ -1,18 +1,18 @@
-﻿@model OKUL.Models.Ogrenci
+﻿@model OKUL.Models.Ogretmen
 
 @{
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
-<h4>Yeni Oluştur</h4>
+<h2>Create</h2>
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Ögrenci</h4>
+        <h4>Ogretmen</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -28,6 +28,14 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Soyad, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Soyad, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Alan, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Alan, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Alan, "", new { @class = "text-danger" })
             </div>
         </div>
 

@@ -5,8 +5,8 @@
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
-<h2>Index</h2>
-<h2>Eklenene Öğrenci ID'si: @TempData["insertedID"]</h2>
+<h3>Öğrenciler</h3>
+
 
 <p>
     @Html.ActionLink("Yeni Öğrenci", "Create", new { }, new { @class = "btn btn-success" })
@@ -41,7 +41,7 @@
 
 </table>
 
-
+<h5>Eklenen Öğrenci ID'si: @TempData["insertedID"]</h5>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

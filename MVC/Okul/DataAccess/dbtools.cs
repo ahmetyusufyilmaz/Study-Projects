@@ -102,6 +102,41 @@ namespace OKUL.DataAccess
             return ogrenciler;
         }
 
+        public List<Ogretmen> ReadOgretmen(string query)
+        {
+            List<Ogretmen> ogretmenler = new List<Ogretmen>();
+            SqlCommand cmd = new SqlCommand(query, con);
+            IDataReader reader;
+            try
+            {
+                ConnectDB();
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    ogretmenler.Add(
+                        new Ogretmen
+                        {
+                            ID = int.Parse(reader["ID"].ToString()),
+                            Ad = reader["Ad"].ToString(),
+                            Soyad = reader["Soyad"].ToString(),
+                            Alan = reader["Alan"].ToString()
+                        });
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+               DisconnectDB();
+
+            }
+            return ogretmenler;
+        }
+
         public bool Execute(string query)
         {
             SqlCommand cmd = new SqlCommand(query, con);

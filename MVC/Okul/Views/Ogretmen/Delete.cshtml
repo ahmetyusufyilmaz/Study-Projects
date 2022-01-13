@@ -1,14 +1,15 @@
-﻿@model OKUL.Models.Ogrenci
+﻿@model OKUL.Models.Ogretmen
 
 @{
     ViewBag.Title = "Delete";
-    //Layout = "~/Views/Shared/_LayoutPage.cshtml";
-    Layout = null;
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
-<h3>Aşağıdaki öğrenciyi silmek istediğinizden emin misiniz?</h3>
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Öğrenci</h4>
+    <h4>Ogretmen</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -27,14 +28,22 @@
             @Html.DisplayFor(model => model.Soyad)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.Alan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alan)
+        </dd>
+
     </dl>
 
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Sil" class="btn btn-danger" /> |
-            @Html.ActionLink("Geri Dön", "Index",new { },new { @class="btn btn-primary"})
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index", new { },new { @class = "btn btn-primary" })
         </div>
     }
 </div>
