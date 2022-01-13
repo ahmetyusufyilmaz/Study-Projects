@@ -1,0 +1,65 @@
+﻿@model IEnumerable<OKUL.Models.Ogrenci>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Index</h2>
+<h2>Eklenene Öğrenci ID'si: @TempData["insertedID"]</h2>
+
+<p>
+    @Html.ActionLink("Yeni Öğrenci", "Create", new { }, new { @class = "btn btn-success" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soyad)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyad)
+            </td>
+            <td>
+                @Html.ActionLink("Düzenle", "Edit", new { id = item.ID }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Detay", "Details", new { id = item.ID }, new { @class = "btn btn-secondary" }) |
+                @Html.ActionLink("Sil", "Delete", new { ID = item.ID }, new { @class = "btn btn-danger", @data_target = "#exampleModal", @data_toggle = "modal" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content p-3">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Öğrenci Sil</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-primary">Sil</button>
+            </div>
+        </div>
+    </div>
+</div>
