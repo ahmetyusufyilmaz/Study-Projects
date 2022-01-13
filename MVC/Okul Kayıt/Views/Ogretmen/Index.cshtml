@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    ViewBag.AraAdres = "/Ogretmen/Ara";
 }
 
 <h3>Öğretmenler</h3>
@@ -24,25 +25,46 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.Ad)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Soyad)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Alan)
-    </td>
-    <td>
-   
-        @Html.ActionLink("Düzenle", "Edit", new { id = item.ID }, new { @class = "btn btn-info" }) |
-        @Html.ActionLink("Detay", "Details", new { id = item.ID }, new { @class = "btn btn-secondary" }) |
-        @Html.ActionLink("Sil", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
-    
-    </td>
-</tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alan)
+            </td>
+            <td>
+
+                @Html.ActionLink("Düzenle", "Edit", new { id = item.ID }, new { @class = "btn btn-info" }) |
+                @Html.ActionLink("Detay", "Details", new { id = item.ID }, new { @class = "btn btn-secondary" }) |
+                @Html.ActionLink("Sil", "Delete", new { id = item.ID }, new { @class = "btn btn-danger", @data_target = "#deleteModal", @data_toggle = "modal" })
+
+            </td>
+        </tr>
+    }
 
 </table>
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content p-3">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Öğretmen Sil</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-primary">Sil</button>
+            </div>
+        </div>
+    </div>
+</div>

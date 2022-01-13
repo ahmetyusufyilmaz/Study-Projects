@@ -51,5 +51,13 @@ namespace OKUL.DataAccess
             string query = $"DELETE FROM tb_ogrenci WHERE ID = {ogrenci.ID};";
             return DbTools.Connection.Execute(query);
         }
+
+        public List<Ogrenci> Search (string word)
+        {
+            string query = $"SELECT * FROM tb_Ogrenci WHERE Ad LIKE '%{word}%' OR Soyad LIKE '%{word}';";
+            return DbTools.Connection.ReadOgrenci(query);
+        }
+       
+
     }
 }

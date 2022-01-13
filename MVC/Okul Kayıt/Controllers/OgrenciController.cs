@@ -90,5 +90,14 @@ namespace OKUL.Controllers
                 return RedirectToAction("Delete");
 
         }
+        [HttpPost]
+        public ActionResult Ara(string arananKelime)
+        {
+            List<Ogrenci> ogrenciler = new List<Ogrenci>();
+            ogrenciler = OgrenciDAL.Current.Search(arananKelime);
+
+            //TempData["arananKelime"] = arananKelime;
+            return View(ogrenciler);
+        }
     }
 }

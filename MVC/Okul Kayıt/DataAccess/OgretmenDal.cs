@@ -48,5 +48,12 @@ namespace OKUL.DataAccess
             return DbTools.Connection.Execute(query);
         }
 
+        public List<Ogretmen> Search(string word)
+        {
+            string query = $"SELECT * FROM tb_ogretmen WHERE Ad LIKE '%{word}%' OR Soyad LIKE '%{word}';";
+            return DbTools.Connection.ReadOgretmen(query);
+        }
+
+
     }
 }

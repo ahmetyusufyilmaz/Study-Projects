@@ -94,6 +94,15 @@ namespace OKUL.Controllers
             }
         }
 
+        [HttpPost]
+        public ActionResult Ara(string arananKelime)
+        {
+            List<Ogretmen> ogretmenler = new List<Ogretmen>();
+            ogretmenler = OgretmenDal.Current.Search(arananKelime);
 
+            //TempData["arananKelime"] = arananKelime;
+            return View(ogretmenler);
+        }
+
+        }
     }
-}
