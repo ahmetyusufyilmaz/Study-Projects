@@ -25,7 +25,7 @@ namespace OKUL.DataAccess
         }
         public object Create(Ogrenci ogrenci)
         {
-            string query = $"INSERT INTO tb_ogrenci (Ad,Soyad) VALUES('{ogrenci.Ad}','{ogrenci.Soyad}'); SELECT CAST(scope_identity() AS int);";
+            string query = $"INSERT INTO tb_ogrenci (Ad,Soyad,Sinif,OgretmenID,FotoAdres) VALUES('{ogrenci.Ad}','{ogrenci.Soyad}','{ogrenci.Sinif}',{ogrenci.OgretmenID},'{ogrenci.FotoAdres}'); SELECT CAST(scope_identity() AS int);";
             object insertedID = DbTools.Connection.Create(query);
             return insertedID;
         }
@@ -43,7 +43,7 @@ namespace OKUL.DataAccess
         }
         public bool Update(Ogrenci ogrenci)
         {
-            string query = $"UPDATE tb_ogrenci SET Ad='{ogrenci.Ad}',Soyad='{ogrenci.Soyad}' WHERE ID={ogrenci.ID};";
+            string query = $"UPDATE tb_ogrenci SET Ad='{ogrenci.Ad}',Soyad='{ogrenci.Soyad}',Sinif='{ogrenci.Sinif}',OgretmenID={ogrenci.OgretmenID},FotoAdres='{ogrenci.FotoAdres}' WHERE ID={ogrenci.ID};";
             return DbTools.Connection.Execute(query);
         }
         public bool Delete(Ogrenci ogrenci)
@@ -54,7 +54,7 @@ namespace OKUL.DataAccess
 
         public List<Ogrenci> Search (string word)
         {
-            string query = $"SELECT * FROM tb_Ogrenci WHERE Ad LIKE '%{word}%' OR Soyad LIKE '%{word}';";
+            string query = $"SELECT * FROM tb_ogrenci WHERE Ad LIKE '%{word}%' OR Soyad LIKE '%{word}';";
             return DbTools.Connection.ReadOgrenci(query);
         }
        

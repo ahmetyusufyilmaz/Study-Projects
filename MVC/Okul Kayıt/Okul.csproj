@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="UploadedFiles\Ogrenci\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
   <PropertyGroup>

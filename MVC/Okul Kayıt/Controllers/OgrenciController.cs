@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using OKUL.DataAccess;
 using OKUL.Models;
+using System.IO;
 
 namespace OKUL.Controllers
 {
@@ -36,6 +37,9 @@ namespace OKUL.Controllers
             ogrenci.ID = 0;
             ogrenci.Ad = null;
             ogrenci.Soyad = null;
+            ogrenci.OgretmenID = 0;
+            List<Ogretmen> ogretmenler = OgretmenDal.Current.GetTeachers();
+            ViewBag.ogretmenler = ogretmenler;
             return View(ogrenci);
         }
 
@@ -43,17 +47,44 @@ namespace OKUL.Controllers
         public ActionResult Create(Ogrenci ogrenci)
         {
             object insertedID = OgrenciDAL.Current.Create(ogrenci);
+            ogrenci.ID = Convert.ToInt32(insertedID);
 
+            if (Convert.ToInt32(insertedID) > 0)
+            {
+                // Kaydetme başarılı ise fotoğrafı yükle.
+                if (ogrenci.Foto != null)
+                {
+                    FotoUpload(ogrenci);
+                }
+            }
             TempData["insertedID"] = insertedID.ToString();
-
-
             return RedirectToAction("Index");
         }
+
+        [NonAction] // Bu metot controller acction'ı değildir.
+
+        private void FotoUpload(Ogrenci ogrenci)
+        {
+            string userPath = Server.MapPath($"~/UploadedFiles/Ogrenci/{ogrenci.ID }/");
+            if (!Directory.Exists(userPath))
+            {
+                Directory.CreateDirectory(userPath);
+            }
+            string fotoPath = Path.Combine(userPath, Path.GetFileName(ogrenci.Foto.FileName));
+            ogrenci.Foto.SaveAs(fotoPath);
+            ogrenci.FotoAdres = ogrenci.ID + "/" + ogrenci.Foto.FileName;
+            OgrenciDAL.Current.Update(ogrenci);
+        }
+
+    
+        
         public ActionResult Edit(int id)
         {
-            //Ogrenci ogrenci = OgrenciDAL.Current.GetByID(id);
-            return View(ogrenci); // Veritabanından gelen öğrenciyi View'a gönderdik.
-        }
+        ogrenci = OgrenciDAL.Current.GetByID(id);
+        List<Ogretmen> ogretmenler = OgretmenDal.Current.GetTeachers();
+        ViewBag.ogretmenler = ogretmenler;
+        return View(ogrenci); // Veritabanından gelen öğrenciyi View'a gönderdik.
+    }
 
         [HttpPost]
         public ActionResult Edit(Ogrenci ogrenci)

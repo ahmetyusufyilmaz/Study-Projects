@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    string ogretmenAdSoyad = Model.Ogretmen.Ad + " " + Model.Ogretmen.Soyad + " " + Model.Ogretmen.Alan;
 }
 
 <h2>Detaylar</h2>
@@ -32,6 +33,22 @@
 
         <dd>
             @Html.DisplayFor(model => model.Soyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sinif)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sinif)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ogretmen)
+        </dt>
+        <dd>
+
+            @Html.ActionLink(linkText: ogretmenAdSoyad
+          , actionName: "Details", controllerName: "Ogretmen", routeValues: new { id = Model.OgretmenID }, htmlAttributes: new { @class = "btn btn-secondary" })
         </dd>
 
     </dl>

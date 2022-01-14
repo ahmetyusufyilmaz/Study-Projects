@@ -18,23 +18,36 @@
         <th>
             @Html.DisplayNameFor(model => model.Soyad)
         </th>
-        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sinif)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OgretmenID)
+        </th>
+      
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ad)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Soyad)
-        </td>
-        <td>
-            @Html.ActionLink("Düzenle", "Edit", new { id = item.ID }, new { @class = "btn btn-primary" }) |
-            @Html.ActionLink("Detay", "Details", new { id = item.ID }, new { @class = "btn btn-secondary" }) |
-            @Html.ActionLink("Sil", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
-        </td>
-    </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Ad)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Soyad)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Sinif)
+    </td>
+    <td>
+        @Html.ActionLink(linkText:item.OgretmenID.ToString()
+           ,actionName:"Details",controllerName:"Ogretmen",routeValues:new {id=item.OgretmenID },htmlAttributes: new{@class="btn btn-secondary"})
+    </td>
+    <td>
+        @Html.ActionLink("Düzenle", "Edit", new { id = item.ID }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("Detay", "Details", new { id = item.ID }, new { @class = "btn btn-secondary" }) |
+        @Html.ActionLink("Sil", "Delete", new { id = item.ID }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
 }
 
 </table>
