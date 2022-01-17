@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    @RenderSection("Styles", false)
 </head>
 <body>
     <main class="container-fluid bg-light p-0">
@@ -19,7 +20,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/Ogrenci/Index">Öğrenci<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/Ogretmen/Index">Öğretmen</a>
                     </li>
                 </ul>

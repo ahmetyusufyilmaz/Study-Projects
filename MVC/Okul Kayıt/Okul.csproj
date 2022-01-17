@@ -142,6 +142,7 @@
     <Content Include="Views\Ogretmen\Delete.cshtml" />
     <Content Include="Views\Ogrenci\Ara.cshtml" />
     <Content Include="Views\Ogretmen\Ara.cshtml" />
+    <Content Include="Views\Ogrenci\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

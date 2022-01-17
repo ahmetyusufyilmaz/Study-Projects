@@ -15,11 +15,14 @@
             selectOgretmen.Add(si);
         }
     }
+    string PhotoUrl = "../../UploadedFiles/Ogrenci/" + Model.FotoAdres;
+
+
 }
 
 <h3>Düzenle</h3>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Edit", "Ogrenci", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
 
@@ -32,7 +35,20 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.HiddenFor(model => model.ID, new { htmlAttributes = new { @class = "form-control" } })
+            <img src="@PhotoUrl" alt="@Model.Ad" style="height:180px;width:140px;" />
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Foto, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Foto, new { type = "file" })
+                @Html.ValidationMessageFor(model => model.Foto, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.FotoAdres)
+                @Html.ValidationMessageFor(model => model.FotoAdres, "")
+            </div>
         </div>
         <div class="form-group">
             @Html.LabelFor(model => model.Ad, htmlAttributes: new { @class = "control-label col-md-2" })

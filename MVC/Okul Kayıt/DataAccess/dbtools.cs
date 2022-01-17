@@ -12,10 +12,11 @@ namespace OKUL.DataAccess
 {
     public class DbTools
     {
-        static string strConnection = ConfigurationManager.ConnectionStrings["DB_Okul"].ConnectionString;
+        static string strConnection = ConfigurationManager.ConnectionStrings["db_okul"].ConnectionString;
         SqlConnection con = new SqlConnection(strConnection);
         private static DbTools _Con { get; set; }
-        public static DbTools Connection {
+        public static DbTools Connection
+        {
             get
             {
                 if (_Con == null)
@@ -88,7 +89,8 @@ namespace OKUL.DataAccess
                             Ad = reader["Ad"].ToString(),
                             Soyad = reader["Soyad"].ToString(),
                             Sinif = reader["Sinif"].ToString(),
-                            OgretmenID = int.Parse(reader["OgretmenID"].ToString())
+                            OgretmenID = int.Parse(reader["OgretmenID"].ToString()),
+                            FotoAdres = reader["FotoAdres"].ToString()
                         }
                         ); 
                 }

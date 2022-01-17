@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using OKUL.DataAccess;
 using OKUL.Models;
 using System.IO;
+using System.Web.Security;
 
 namespace OKUL.Controllers
 {
@@ -31,6 +32,7 @@ namespace OKUL.Controllers
         }
 
         // GET: Ogrenci Create Form
+        [Authorize]
         public ActionResult Create()
         {
             //Ogrenci ogrenci = new Ogrenci();
@@ -90,7 +92,13 @@ namespace OKUL.Controllers
         public ActionResult Edit(Ogrenci ogrenci)
         {
             if (OgrenciDAL.Current.Update(ogrenci))
+            {
+                if (ogrenci.Foto != null)
+                    FotoUpload(ogrenci);
+
                 return RedirectToAction("Index");
+               
+            }
             else
             {
                 TempData["hata"] = "Öğrenci güncellenirken hata oluştu!!!!";
@@ -129,6 +137,21 @@ namespace OKUL.Controllers
 
             //TempData["arananKelime"] = arananKelime;
             return View(ogrenciler);
+        }
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(string username, string password)
+        {
+            if (username == "admin" && password == "admin123")
+            {
+                FormsAuthentication.SetAuthCookie("admin", false);
+                return RedirectToAction("Create");
+            }
+            return RedirectToAction("Login");
         }
     }
 }
