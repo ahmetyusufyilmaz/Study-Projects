@@ -1,0 +1,32 @@
+body{
+    background-color: white;
+    font-family: serif;
+}
+#searcharea{
+    background-color: #EEEEEE;
+    font-size: 1.5rem !important;
+}
+.form-control{
+    width: 50%!important;
+    display: inline-block;
+
+}
+#srcbtnarea{
+   justify-content: center;
+   
+}
+#search{
+    width: 200px;
+    background-color: rgb(239, 239, 239);
+    color: black;
+    font-size: .8rem;
+}
+#links{
+    background-color: rgb(126, 229, 218);
+ 
+}
+#links .col div a{
+ 
+    text-decoration: none;
+    color: blue;
+}
