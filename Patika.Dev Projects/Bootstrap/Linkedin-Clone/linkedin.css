@@ -1,0 +1,16 @@
+body{
+    background: rgb(241, 239, 239);
+}
+
+.ml-2
+{
+    margin-left: 10px;
+}
+
+
+
+.vl {
+    border-left: 1px solid lightgray;
+    height: 67px;
+    top: 0;
+  }
